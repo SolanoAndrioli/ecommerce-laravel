@@ -11,9 +11,39 @@
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
+}); */
+//RUTAS
+Route::get('/about', function (){
+    return view('about');
 });
+Route::get('/cart', function () {
+    return view('cart');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/detail', function () {
+    return view('detail');
+});
+Route::get('/faq', function () {
+    return view('faq');
+});
+Route::get('/index', function () {
+    return view('index');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/userprofile', function () {
+    return view('userprofile');
+});
+//FIN DE RUTAS
+
 Route::get('/adminCategorias', 'categorias@index');
 Route::get('/formAgregarCategoria', 'categorias@create');
 Route::post('/agregarCategoria', 'categorias@store');
